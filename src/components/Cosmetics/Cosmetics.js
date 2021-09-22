@@ -11,6 +11,7 @@ const Cosmetics = () => {
             .then(data => setCosmetics(data))
     }, [])
 
+
     // one way
     // const arrPrice = cosmetics.map(value => value.price);
     // const wholePrice = arrPrice.reduce((present, current) => present + current, 0);
@@ -18,7 +19,6 @@ const Cosmetics = () => {
     // another way
     const wholePrice = cosmetics.reduce((present, current) => present + current.price, 0);
 
-    console.log(wholePrice);
 
     return (
         <div >
